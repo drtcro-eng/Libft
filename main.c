@@ -12,5 +12,6 @@ int main() {
 	ft_putstr("letras\n");
 	ft_putstr_reverse(palabra);
 	ft_putnbr(ft_strcmp(palabra, palabra2));
+	ft_putnbr_base(255, "0123456789ABCDEF");
 	return 0;
 }

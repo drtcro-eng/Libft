@@ -9,5 +9,6 @@ void ft_putnbr(int n);
 int ft_strlen(char *str);
 void ft_putstr_reverse(char *str);
 int ft_strcmp(char *s1, char *s2);
+void ft_putnbr_base(int n, char *base);
 
 #endif

@@ -1,15 +1,18 @@
 void ft_putchar(char c);
+int ft_strlen(char *str);
 
-void ft_putnbr_base(int n)
+void ft_putnbr_base(int n, char *base)
 {
+int size = ft_strlen(base);
+
 if (n < 0)
 {
         ft_putchar('-');
         n= -n;
 }
-if (n > 9)
+if (n >= size)
 {
-        ft_putnbr_base(n / 2);
+        ft_putnbr_base(n / size, base);
 }
-        ft_putchar_base(n % 2 + 48);
+        ft_putchar(base [n % size]);
 }
