@@ -12,6 +12,10 @@ int main() {
 	ft_putstr("letras\n");
 	ft_putstr_reverse(palabra);
 	ft_putnbr(ft_strcmp(palabra, palabra2));
+	ft_putchar('\n');
 	ft_putnbr_base(255, "0123456789ABCDEF");
+	ft_putchar('\n');
+	ft_hex_dump("DANIEL");
+	ft_putchar('\n');
 	return 0;
 }
